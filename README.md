@@ -1,16 +1,19 @@
-# 🎬 YT Downloader (Electron + yt-dlp)
+# 📥 Local Video Downloader (Electron + yt-dlp)
 
-A clean, lightweight YouTube downloader that launches a **local web UI in your default browser**.  
-Paste a link → choose **MP4 or MP3** → pick quality → download.  
-Bundled with **yt-dlp + ffmpeg**, so end users don’t need to install Python, Node, or anything else.
+A clean, lightweight video downloader that launches a **local web UI in your default browser**.  
+Paste a link → choose **MP4 or MP3** → pick quality → download.
+
+Powered by **yt-dlp + ffmpeg** and bundled inside the app, so end users don’t need to install Python, Node, or anything else.
+
+> yt-dlp supports many sites beyond YouTube (TikTok, Twitter/X, Instagram, Vimeo, Facebook, SoundCloud, and hundreds more).  
+> If yt-dlp can download it, this app can too.
 
 ---
 
 ## ⬇️ Downloads
 
-- **macOS (.dmg):** [Download from Releases](https://github.com/sishanhewa/Local-Video-Downloader/releases/latest)
-- **Windows (.exe):** Coming soon
-> Go to the **Releases** section on the right side of this repo and grab the newest `.dmg`.
+- **macOS (.dmg)**: **[Download from Releases](https://github.com/sishanhewa/Local-Video-Downloader/releases/latest)**
+- **Windows (.exe)**: **Coming soon**
 
 ---
 
@@ -28,7 +31,7 @@ Bundled with **yt-dlp + ffmpeg**, so end users don’t need to install Python, N
 ## 🖥️ Install (macOS)
 
 1. Download the latest **`.dmg`** from Releases  
-2. Open it and drag **YT Downloader** into Applications  
+2. Open it and drag **Local Video Downloader** into Applications  
 3. Launch the app
 
 ### macOS Security / Gatekeeper
@@ -46,7 +49,7 @@ Do one of these:
 **Method B**
 1. Go to **System Settings → Privacy & Security**
 2. Scroll to **Security**
-3. Click **Open Anyway** next to YT Downloader
+3. Click **Open Anyway** next to Local Video Downloader
 
 ✅ After first launch, it opens normally.
 
@@ -54,10 +57,10 @@ Do one of these:
 
 ## ▶️ How to Use
 
-1. Open **YT Downloader**
+1. Open **Local Video Downloader**
 2. Your browser opens automatically at:  
    `http://127.0.0.1:8787`
-3. Paste a YouTube link
+3. Paste a video link from any supported site
 4. Pick:
    - **MP4 (Video)** or  
    - **MP3 (Audio)**
@@ -72,7 +75,7 @@ Do one of these:
 ### 1) Open the project
 1. Launch **IntelliJ IDEA**
 2. **File → Open**
-3. Select the folder: `yt-downloader-electron`
+3. Select the folder: `Local-Video-Downloader`
 4. Trust the project when prompted.
 
 ### 2) Configure Node.js in IntelliJ
@@ -124,8 +127,8 @@ npm run dist
 Outputs:
 ```
 dist/
-  YT Downloader.dmg
-  mac/YT Downloader.app
+  Local Video Downloader.dmg
+  mac/Local Video Downloader.app
 ```
 
 ---
@@ -148,7 +151,7 @@ npm run dist
 ## 🧩 Project Structure
 
 ```
-yt-downloader-electron/
+Local-Video-Downloader/
   main.js
   package.json
   server/
