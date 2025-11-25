@@ -8,8 +8,8 @@ Bundled with **yt-dlp + ffmpeg**, so end users don’t need to install Python, N
 
 ## ⬇️ Downloads
 
-- **macOS (.dmg)** → Download the latest installer from **Releases**
-- **Windows (.exe)** → **Coming soon**
+- **macOS (.dmg)**: Download from [Releases](https://github.com/sishanhewa/yt-downloader-electron/releases/latest)
+- **Windows (.exe)**: coming soon
 
 > Go to the **Releases** section on the right side of this repo and grab the newest `.dmg`.
 
