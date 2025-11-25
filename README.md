@@ -1,4 +1,4 @@
-# 📥 Local Video Downloader (Electron + yt-dlp)
+# 📥 Local Video Downloader 
 
 A clean, lightweight video downloader that launches a **local web UI in your default browser**.  
 Paste a link → choose **MP4 or MP3** → pick quality → download.
@@ -193,8 +193,3 @@ Respect creators and platform terms.
 - Built with **Electron + Express**
 
 ---
-
-## 🔮 Roadmap
-- ✅ macOS DMG installer
-- ✅ Windows EXE installer
-- ⏳ Optional “simple mode” UI (progress-only)
