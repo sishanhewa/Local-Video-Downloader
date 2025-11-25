@@ -193,8 +193,3 @@ Respect creators and platform terms.
 - Built with **Electron + Express**
 
 ---
-
-## 🔮 Roadmap
-- ✅ macOS DMG installer
-- ✅ Windows EXE installer
-- ⏳ Optional “simple mode” UI (progress-only)
