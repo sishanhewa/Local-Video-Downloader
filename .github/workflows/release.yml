@@ -3,10 +3,10 @@ name: Build and Release
 on:
   push:
     tags:
-      - "v*.*.*"   # runs only when you push a version tag like v2.0.1
+      - "v*.*.*"
 
 permissions:
-  contents: write   # needed to upload release assets
+  contents: write
 
 jobs:
   build-mac:
@@ -14,11 +14,13 @@ jobs:
     runs-on: macos-latest
 
     env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # ✅ electron-builder needs this name
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # important after history rewrite
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -29,10 +31,10 @@ jobs:
         run: npm install
 
       - name: Build mac ARM64 dmg
-        run: npm run dist:mac:arm
+        run: npm run dist:mac:arm -- --publish always
 
       - name: Build mac Intel dmg
-        run: npm run dist:mac:intel
+        run: npm run dist:mac:intel -- --publish always
 
 
   build-win:
@@ -40,11 +42,13 @@ jobs:
     runs-on: windows-latest
 
     env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # ✅ electron-builder needs this name
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # important after history rewrite
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -55,4 +59,4 @@ jobs:
         run: npm install
 
       - name: Build Windows EXE
-        run: npm run dist:win
+        run: npm run dist:win -- --publish always
